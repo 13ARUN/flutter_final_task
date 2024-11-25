@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Movie App',
+      title: 'Stream Mate',
       darkTheme: darkTheme,
       themeMode: ThemeMode.dark,
       home: const HomeScreen(),

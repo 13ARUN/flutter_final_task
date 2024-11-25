@@ -33,7 +33,6 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
   Widget build(BuildContext context) {
     final movies = ref.watch(movieProvider);
 
-    // Apply filtering here using the MovieNotifier's method
     final filteredMovies =
         ref.watch(movieProvider.notifier).filterMovies(movies, searchQuery);
 
