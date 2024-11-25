@@ -12,9 +12,10 @@ class SearchMoviesBar extends StatelessWidget {
       child: TextField(
         onChanged: onSearch,
         decoration: const InputDecoration(
-          hintText: ' Search movies...',
+          hintText: 'Search movies...',
           border: OutlineInputBorder(
-              borderRadius: BorderRadius.all(Radius.circular(10))),
+            borderRadius: BorderRadius.all(Radius.circular(10)),
+          ),
           suffixIcon: Icon(Icons.search),
         ),
       ),

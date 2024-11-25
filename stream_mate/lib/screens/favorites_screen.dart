@@ -19,14 +19,14 @@ class FavoritesScreen extends ConsumerWidget {
                 children: [
                   Icon(
                     Icons.stars,
-                    size: 100,
+                    size: 60,
                   ),
                   SizedBox(
                     height: 16,
                   ),
                   Text(
                     'No favorites added yet!',
-                    style: TextStyle(fontSize: 18, fontWeight: FontWeight.w500),
+                    style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
                   ),
                 ],
               ),

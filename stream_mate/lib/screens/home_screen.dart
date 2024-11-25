@@ -57,8 +57,25 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                   Expanded(
                     child: filteredMovies.isEmpty
                         ? const Center(
-                            child: Text("No movies found",
-                                style: TextStyle(color: Colors.white)))
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Icon(
+                                  Icons.search_off,
+                                  size: 60,
+                                ),
+                                SizedBox(
+                                  height: 16,
+                                ),
+                                Text(
+                                  'No movies found!',
+                                  style: TextStyle(
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.w500),
+                                ),
+                              ],
+                            ),
+                          )
                         : GridView.builder(
                             padding: const EdgeInsets.all(8),
                             gridDelegate:
